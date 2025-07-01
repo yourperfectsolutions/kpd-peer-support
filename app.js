@@ -1,298 +1,301 @@
-// Team member data with professional headshot photos
+// Application data
 const teamMembers = [
   {
-    id: 1,
-    name: "Sergeant Maria Rodriguez",
-    rank: "Sergeant",
-    title: "Team Lead",
-    specialization: "Crisis Intervention & Family Support",
-    description: "Certified in Critical Incident Stress Management with 15+ years experience. Available 24/7 for emergency situations.",
-    email: "mrodriguez@kpd.gov",
-    phone: "(254) 555-0101",
-    availability: "24/7 Emergency Response",
-    certifications: ["CISM Certified", "Mental Health First Aid", "Crisis Intervention"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1751275049/pplx_project_search_images/6d758926cb76f8b0a7a02e1e9923826583745a1d.jpg"
+    "name": "Sergeant Maria Rodriguez",
+    "title": "Crisis Intervention Team Lead",
+    "specialization": "Crisis Intervention & Family Support",
+    "availability": "24/7 Emergency Response",
+    "email": "m.rodriguez@killeenpd.gov",
+    "phone": "(254) 501-8830",
+    "certifications": ["Critical Incident Stress Management (CISM)", "Mental Health First Aid", "Crisis Intervention Team (CIT) Certified"],
+    "bio": "Sergeant Rodriguez brings over 15 years of law enforcement experience to the peer support team. She specializes in crisis intervention and family support, providing 24/7 emergency response for officers in critical situations. Her compassionate approach and extensive training make her a trusted resource for officers and their families during challenging times.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380366/gpt4o_images/gp2eabhescnz5rkdfmtx.png"
   },
   {
-    id: 2,
-    name: "Officer David Chen",
-    rank: "Officer", 
-    title: "Wellness Specialist",
-    specialization: "Stress Management & Substance Abuse Support",
-    description: "Mental Health First Aid certified. Specializes in wellness programs and substance abuse support.",
-    email: "dchen@kpd.gov",
-    phone: "(254) 555-0102",
-    availability: "Monday-Friday 8AM-6PM",
-    certifications: ["Mental Health First Aid", "Substance Abuse Counseling", "Wellness Coaching"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1751273451/pplx_project_search_images/9ce788623d6599fee5335e9210f68800b5fa0550.jpg"
+    "name": "Officer David Chen",
+    "title": "Wellness Specialist",
+    "specialization": "Stress Management & Substance Abuse Support",
+    "availability": "Monday-Friday, 8am-6pm",
+    "email": "d.chen@killeenpd.gov",
+    "phone": "(254) 501-8831",
+    "certifications": ["Certified Addiction Counselor", "Stress Management Specialist", "Mental Health First Aid"],
+    "bio": "Officer Chen focuses on proactive wellness strategies and substance abuse support. With specialized training in stress management and addiction counseling, he helps officers develop healthy coping mechanisms and provides confidential support for substance-related concerns.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380450/gpt4o_images/x0zih8rtlqprkzdmff4a.png"
   },
   {
-    id: 3,
-    name: "Detective Lisa Thompson",
-    rank: "Detective",
-    title: "Trauma Support Specialist", 
-    specialization: "Critical Incidents & PTSD Support",
-    description: "Trauma counseling specialist with expertise in officer-involved incidents and PTSD support.",
-    email: "lthompson@kpd.gov",
-    phone: "(254) 555-0103",
-    availability: "Tuesday-Saturday 10AM-8PM",
-    certifications: ["Trauma Counseling", "PTSD Support", "Critical Incident Response"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1750687030/pplx_project_search_images/90e4e5756a53c1f4cc4abb50012b949580fa6fbb.jpg"
+    "name": "Detective Lisa Thompson",
+    "title": "Trauma Support Specialist",
+    "specialization": "Critical Incidents & PTSD Support",
+    "availability": "24/7 On-Call",
+    "email": "l.thompson@killeenpd.gov",
+    "phone": "(254) 501-8832",
+    "certifications": ["PTSD Specialist", "Critical Incident Stress Management", "Trauma-Informed Care"],
+    "bio": "Detective Thompson specializes in supporting officers who have experienced traumatic incidents. Her expertise in PTSD and trauma recovery helps officers process difficult experiences and develop resilience strategies for continued service.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380541/gpt4o_images/pcacidaytobawlggj704.png"
   },
   {
-    id: 4,
-    name: "Corporal James Wilson",
-    rank: "Corporal",
-    title: "Financial Counselor",
-    specialization: "Financial Planning & Career Guidance", 
-    description: "Provides confidential financial counseling and retirement planning for officers and families.",
-    email: "jwilson@kpd.gov",
-    phone: "(254) 555-0104",
-    availability: "Monday-Thursday 9AM-5PM",
-    certifications: ["Financial Planning", "Career Counseling", "Retirement Planning"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1751275049/pplx_project_search_images/702827b85ec6b80a6a1ea754bf5de474d5b49c2b.jpg"
+    "name": "Corporal James Wilson",
+    "title": "Financial Counselor",
+    "specialization": "Financial Planning & Career Guidance",
+    "availability": "Tuesday-Thursday, 9am-5pm",
+    "email": "j.wilson@killeenpd.gov",
+    "phone": "(254) 501-8833",
+    "certifications": ["Certified Financial Planner", "Career Counseling Certificate", "Employee Assistance Program Specialist"],
+    "bio": "Corporal Wilson provides financial counseling and career guidance to officers and their families. He helps with budgeting, retirement planning, and navigating career transitions within law enforcement.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380591/gpt4o_images/ltsjcgc8v8jwkxbrupb3.png"
   },
   {
-    id: 5,
-    name: "Officer Amanda Foster",
-    rank: "Officer",
-    title: "Family Relations Specialist",
-    specialization: "Work-Life Balance & Family Support",
-    description: "Specializes in family counseling and work-life balance for law enforcement families.",
-    email: "afoster@kpd.gov", 
-    phone: "(254) 555-0105",
-    availability: "Monday-Friday 7AM-3PM",
-    certifications: ["Family Counseling", "Work-Life Balance", "Marriage & Family Therapy"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1751275048/pplx_project_search_images/bd0b18296fb9d925d1aaf656e7e3c9ccc9a1ce0c.jpg"
+    "name": "Officer Amanda Foster",
+    "title": "Family Relations Specialist",
+    "specialization": "Work-Life Balance & Family Support",
+    "availability": "Monday-Friday, 10am-7pm",
+    "email": "a.foster@killeenpd.gov",
+    "phone": "(254) 501-8834",
+    "certifications": ["Family Systems Therapy", "Work-Life Balance Coach", "Mental Health First Aid"],
+    "bio": "Officer Foster specializes in helping officers maintain healthy relationships and work-life balance. She provides support for family issues, relationship challenges, and strategies for managing the unique stresses that law enforcement places on families.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380654/gpt4o_images/lcpkmg586nnajuude8mf.png"
   },
   {
-    id: 6,
-    name: "Lieutenant Robert Martinez", 
-    rank: "Lieutenant",
-    title: "Program Coordinator",
-    specialization: "Program Administration & Wellness Coordination",
-    description: "Oversees peer support program administration and coordinates wellness initiatives.",
-    email: "rmartinez@kpd.gov",
-    phone: "(254) 555-0106", 
-    availability: "Monday-Friday 8AM-4PM",
-    certifications: ["Program Management", "Wellness Coordination", "Administrative Leadership"],
-    photo: "https://pplx-res.cloudinary.com/image/upload/v1751275048/pplx_project_search_images/947e4a62675f83998c3f7e7ee426e4d0f1dc2c82.jpg"
+    "name": "Lieutenant Robert Martinez",
+    "title": "Program Coordinator",
+    "specialization": "Administration & Wellness Coordination",
+    "availability": "Monday-Friday, 8am-5pm",
+    "email": "r.martinez@killeenpd.gov",
+    "phone": "(254) 501-8835",
+    "certifications": ["Peer Support Program Administration", "Leadership in Crisis Management", "Mental Health First Aid Instructor"],
+    "bio": "Lieutenant Martinez oversees the entire peer support program, ensuring quality services and program development. He coordinates training, manages resources, and serves as the liaison between the peer support team and department administration.",
+    "profileImage": "https://pplx-res.cloudinary.com/image/upload/v1751380721/gpt4o_images/umqdmt7h3tdydci9t1v5.png"
   }
 ];
 
-// DOM elements
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const emergencyResources = [
+  {
+    "name": "National Suicide & Crisis Lifeline",
+    "number": "988",
+    "description": "24/7 free and confidential emotional support"
+  },
+  {
+    "name": "SAFE-CALL-NOW",
+    "number": "1-800-SAFE-CALL",
+    "description": "24/7 confidential help for law enforcement"
+  },
+  {
+    "name": "Police1st",
+    "number": "1-800-267-7267",
+    "description": "Peer support for law enforcement officers"
+  },
+  {
+    "name": "Texas Crisis Text Line",
+    "number": "Text HOME to 741741",
+    "description": "Crisis support via text messaging"
+  },
+  {
+    "name": "KPD Emergency Dispatch",
+    "number": "911",
+    "description": "Immediate emergency response"
+  }
+];
+
+// DOM Elements
+const header = document.getElementById('header');
+const mobileToggle = document.getElementById('mobileToggle');
 const navMenu = document.getElementById('navMenu');
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.getElementById('searchBtn');
 const teamGrid = document.getElementById('teamGrid');
-const modal = document.getElementById('teamModal');
+const emergencyGrid = document.getElementById('emergencyGrid');
+const teamModal = document.getElementById('teamModal');
+const modalBackdrop = document.getElementById('modalBackdrop');
 const modalClose = document.getElementById('modalClose');
 const modalBody = document.getElementById('modalBody');
+const connectBtn = document.getElementById('connectBtn');
+
+// Store the scroll position before opening modal
+let scrollPosition = 0;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-  initializeNavigation();
-  renderTeamMembers();
-  initializeModal();
-  initializeHeroCTA();
-  initializeSearch();
-  initializeScrollToTop();
+  initializeApp();
 });
 
-// Navigation functionality
-function initializeNavigation() {
-  // Mobile menu toggle
-  if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      navMenu.classList.toggle('active');
-      mobileMenuBtn.classList.toggle('active');
-    });
-  }
-
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        const headerHeight = 70;
-        const targetPosition = targetElement.offsetTop - headerHeight;
-        
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-      
-      // Close mobile menu after clicking
-      if (navMenu) {
-        navMenu.classList.remove('active');
-      }
-      if (mobileMenuBtn) {
-        mobileMenuBtn.classList.remove('active');
-      }
-    });
-  });
-
-  // Close mobile menu when clicking outside
-  document.addEventListener('click', function(e) {
-    if (navMenu && mobileMenuBtn && 
-        !navMenu.contains(e.target) && 
-        !mobileMenuBtn.contains(e.target)) {
-      navMenu.classList.remove('active');
-      mobileMenuBtn.classList.remove('active');
-    }
-  });
-
-  // Close mobile menu on escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && navMenu && navMenu.classList.contains('active')) {
-      navMenu.classList.remove('active');
-      mobileMenuBtn.classList.remove('active');
-    }
-  });
+function initializeApp() {
+  setupEventListeners();
+  populateTeamGrid();
+  populateEmergencyGrid();
+  handleSmoothScrolling();
 }
 
-// Render team member cards
-function renderTeamMembers() {
-  if (!teamGrid) return;
+function setupEventListeners() {
+  // Header scroll effect
+  window.addEventListener('scroll', handleHeaderScroll);
   
-  teamGrid.innerHTML = '';
+  // Mobile navigation
+  mobileToggle.addEventListener('click', toggleMobileNav);
   
-  teamMembers.forEach(member => {
-    const teamCard = createTeamCard(member);
-    teamGrid.appendChild(teamCard);
-  });
-}
-
-// Create individual team member card
-function createTeamCard(member) {
-  const card = document.createElement('div');
-  card.className = 'team-card';
-  card.setAttribute('data-member-id', member.id);
-  card.setAttribute('tabindex', '0');
-  card.setAttribute('role', 'button');
-  card.setAttribute('aria-label', `View details for ${member.name}`);
-  
-  card.innerHTML = `
-    <img src="${member.photo}" alt="${member.name} - ${member.title}" class="team-photo" loading="lazy" onerror="handleImageError(this)">
-    <h3 class="team-name">${member.name}</h3>
-    <p class="team-title">${member.rank} • ${member.title}</p>
-    <p class="team-specialization">${member.specialization}</p>
-    <p class="team-description">${member.description}</p>
-    <button class="team-contact-btn">View Contact Details</button>
-    <p class="team-availability">Available: ${member.availability}</p>
-  `;
-  
-  // Add click event listener
-  card.addEventListener('click', function() {
-    openTeamModal(member);
-  });
-  
-  // Add keyboard support
-  card.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      openTeamModal(member);
+  // Search functionality
+  searchBtn.addEventListener('click', handleSearch);
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      handleSearch();
     }
   });
   
-  return card;
-}
-
-// Modal functionality
-function initializeModal() {
-  if (!modal || !modalClose) return;
-  
-  // Close modal when clicking the X button
+  // Modal functionality
+  modalBackdrop.addEventListener('click', closeModal);
   modalClose.addEventListener('click', closeModal);
   
-  // Close modal when clicking outside the modal content
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-      closeModal();
-    }
+  // Connect button
+  connectBtn.addEventListener('click', function() {
+    document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
   });
   
-  // Close modal with Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
-      closeModal();
-    }
+  // Form submission
+  const form = document.querySelector('.form');
+  if (form) {
+    form.addEventListener('submit', handleFormSubmission);
+  }
+  
+  // Close mobile nav when clicking on links
+  document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+    });
   });
 }
 
-// Open team member modal
-function openTeamModal(member) {
-  if (!modal || !modalBody) return;
-  
-  modalBody.innerHTML = createModalContent(member);
-  modal.style.display = 'block';
-  document.body.style.overflow = 'hidden';
-  
-  // Focus management for accessibility
-  if (modalClose) {
-    modalClose.focus();
+function handleHeaderScroll() {
+  if (window.scrollY > 100) {
+    header.classList.add('header--scrolled');
+  } else {
+    header.classList.remove('header--scrolled');
   }
 }
 
-// Close modal
-function closeModal() {
-  if (!modal) return;
-  
-  modal.style.display = 'none';
-  document.body.style.overflow = 'auto';
+function toggleMobileNav() {
+  navMenu.classList.toggle('show');
 }
 
-// Create modal content
-function createModalContent(member) {
-  return `
-    <div style="text-align: center;">
-      <img src="${member.photo}" alt="${member.name}" class="modal-team-photo" onerror="handleImageError(this)">
-      <h2 class="modal-team-name">${member.name}</h2>
-      <p class="modal-team-title">${member.rank} • ${member.title}</p>
-      <div class="modal-specialization">${member.specialization}</div>
+function handleSearch() {
+  const query = searchInput.value.trim().toLowerCase();
+  if (!query) {
+    alert('Please enter a search term.');
+    return;
+  }
+  
+  // Simple search functionality
+  const searchableElements = document.querySelectorAll('.team__member, .about__card, .emergency__card');
+  let found = false;
+  
+  searchableElements.forEach(element => {
+    const text = element.textContent.toLowerCase();
+    if (text.includes(query)) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.style.outline = '3px solid #21808d';
+      setTimeout(() => {
+        element.style.outline = '';
+      }, 3000);
+      found = true;
+      return;
+    }
+  });
+  
+  if (!found) {
+    alert('No results found for "' + query + '"');
+  }
+  
+  searchInput.value = '';
+}
+
+function populateTeamGrid() {
+  teamGrid.innerHTML = teamMembers.map(member => `
+    <div class="team__member" onclick="openTeamModal('${member.name}')">
+      <img src="${member.profileImage}" alt="${member.name}" class="team__image" loading="lazy">
+      <h3 class="team__name">${member.name}</h3>
+      <p class="team__title">${member.title}</p>
+      <p class="team__specialization">${member.specialization}</p>
+      <p class="team__availability">${member.availability}</p>
+    </div>
+  `).join('');
+}
+
+function populateEmergencyGrid() {
+  emergencyGrid.innerHTML = emergencyResources.map(resource => `
+    <div class="emergency__card">
+      <h3 class="emergency__name">${resource.name}</h3>
+      <p class="emergency__number">${resource.number}</p>
+      <p class="emergency__description">${resource.description}</p>
+    </div>
+  `).join('');
+}
+
+function openTeamModal(memberName) {
+  const member = teamMembers.find(m => m.name === memberName);
+  if (!member) return;
+  
+  // Store current scroll position
+  scrollPosition = window.pageYOffset;
+  
+  modalBody.innerHTML = `
+    <img src="${member.profileImage}" alt="${member.name}" class="modal__image">
+    <h2 class="modal__name">${member.name}</h2>
+    <p class="modal__title">${member.title}</p>
+    
+    <div class="modal__section">
+      <h3 class="modal__section-title">Specialization</h3>
+      <p class="modal__text">${member.specialization}</p>
     </div>
     
-    <p class="modal-description">${member.description}</p>
-    
-    <div class="modal-contact-info">
-      <div class="contact-item">
-        <strong>Email:</strong>
-        <a href="mailto:${member.email}" target="_blank">${member.email}</a>
-      </div>
-      <div class="contact-item">
-        <strong>Phone:</strong>
-        <a href="tel:${member.phone}">${member.phone}</a>
-      </div>
-      <div class="contact-item">
-        <strong>Available:</strong>
-        <span>${member.availability}</span>
-      </div>
+    <div class="modal__section">
+      <h3 class="modal__section-title">Availability</h3>
+      <p class="modal__text">${member.availability}</p>
     </div>
     
-    <div class="modal-certifications">
-      <h4>Certifications & Specializations</h4>
-      <div class="certifications-list">
-        ${member.certifications.map(cert => `<span class="certification-tag">${cert}</span>`).join('')}
-      </div>
+    <div class="modal__contact">
+      <h3 class="modal__section-title">Contact Information</h3>
+      <p class="modal__text"><strong>Email:</strong> ${member.email}</p>
+      <p class="modal__text"><strong>Phone:</strong> ${member.phone}</p>
+    </div>
+    
+    <div class="modal__section">
+      <h3 class="modal__section-title">About</h3>
+      <p class="modal__text">${member.bio}</p>
+    </div>
+    
+    <div class="modal__section">
+      <h3 class="modal__section-title">Certifications</h3>
+      <ul class="modal__certifications">
+        ${member.certifications.map(cert => `<li class="modal__certification">${cert}</li>`).join('')}
+      </ul>
     </div>
   `;
+  
+  teamModal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.style.width = '100%';
 }
 
-// Hero CTA functionality
-function initializeHeroCTA() {
-  const heroCTA = document.querySelector('.hero-cta');
+function closeModal() {
+  teamModal.classList.remove('show');
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
   
-  if (heroCTA) {
-    heroCTA.addEventListener('click', function() {
-      const teamSection = document.getElementById('team');
-      if (teamSection) {
-        const headerHeight = 70;
-        const targetPosition = teamSection.offsetTop - headerHeight;
+  // Restore scroll position
+  window.scrollTo(0, scrollPosition);
+}
+
+function handleSmoothScrolling() {
+  // Handle navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const headerHeight = header.offsetHeight;
+        const targetPosition = target.offsetTop - headerHeight - 20;
         
         window.scrollTo({
           top: targetPosition,
@@ -300,133 +303,120 @@ function initializeHeroCTA() {
         });
       }
     });
+  });
+}
+
+function handleFormSubmission(e) {
+  e.preventDefault();
+  
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+  
+  const name = nameInput.value.trim() || 'Anonymous';
+  const email = emailInput.value.trim() || 'Not provided';
+  const message = messageInput.value.trim();
+  
+  // Form validation
+  if (!message) {
+    alert('Please enter a message before submitting.');
+    messageInput.focus();
+    return;
+  }
+  
+  if (message.length < 10) {
+    alert('Please provide a more detailed message (at least 10 characters).');
+    messageInput.focus();
+    return;
+  }
+  
+  // Email validation if provided
+  if (emailInput.value.trim() && !isValidEmail(emailInput.value.trim())) {
+    alert('Please enter a valid email address.');
+    emailInput.focus();
+    return;
+  }
+  
+  // Simulate form submission
+  alert(`Thank you for reaching out, ${name}. Your message has been received and a peer support specialist will contact you soon. Remember, help is available 24/7.`);
+  
+  // Reset form
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Emergency contact quick access
+function callEmergency(number) {
+  if (confirm(`Call ${number}?`)) {
+    window.open(`tel:${number}`);
   }
 }
 
-// Search functionality
-function initializeSearch() {
-  const searchInput = document.querySelector('.search-input');
-  const searchBtn = document.querySelector('.search-btn');
+// Add emergency contact functionality to emergency cards
+document.addEventListener('click', function(e) {
+  if (e.target.closest('.emergency__card')) {
+    const card = e.target.closest('.emergency__card');
+    const number = card.querySelector('.emergency__number').textContent;
+    callEmergency(number);
+  }
+});
+
+// Keyboard accessibility
+document.addEventListener('keydown', function(e) {
+  // Close modal with Escape key
+  if (e.key === 'Escape' && teamModal.classList.contains('show')) {
+    closeModal();
+  }
   
-  if (searchInput && searchBtn) {
-    // Search on button click
-    searchBtn.addEventListener('click', performSearch);
-    
-    // Search on Enter key
-    searchInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') {
-        performSearch();
+  // Toggle mobile nav with Enter/Space on mobile toggle
+  if ((e.key === 'Enter' || e.key === ' ') && e.target === mobileToggle) {
+    e.preventDefault();
+    toggleMobileNav();
+  }
+});
+
+// Focus management for modal
+function trapFocus(element) {
+  const focusableElements = element.querySelectorAll(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length - 1];
+
+  element.addEventListener('keydown', function(e) {
+    if (e.key === 'Tab') {
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          lastElement.focus();
+          e.preventDefault();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          firstElement.focus();
+          e.preventDefault();
+        }
       }
-    });
-    
-    // Live search as user types (debounced)
-    let searchTimeout;
-    searchInput.addEventListener('input', function() {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(performSearch, 300);
-    });
-  }
-}
-
-// Perform search
-function performSearch() {
-  const searchInput = document.querySelector('.search-input');
-  if (!searchInput) return;
-  
-  const searchTerm = searchInput.value.toLowerCase().trim();
-  
-  if (!searchTerm) {
-    renderTeamMembers(); // Show all members if search is empty
-    return;
-  }
-  
-  const filteredMembers = teamMembers.filter(member => {
-    return member.name.toLowerCase().includes(searchTerm) ||
-           member.title.toLowerCase().includes(searchTerm) ||
-           member.specialization.toLowerCase().includes(searchTerm) ||
-           member.description.toLowerCase().includes(searchTerm) ||
-           member.certifications.some(cert => cert.toLowerCase().includes(searchTerm));
-  });
-  
-  renderFilteredTeamMembers(filteredMembers);
-}
-
-// Render filtered team members
-function renderFilteredTeamMembers(filteredMembers) {
-  if (!teamGrid) return;
-  
-  teamGrid.innerHTML = '';
-  
-  if (filteredMembers.length === 0) {
-    teamGrid.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
-        <h3>No team members found</h3>
-        <p>Try adjusting your search terms or <button onclick="clearSearch()" style="color: var(--color-primary); background: none; border: none; cursor: pointer; text-decoration: underline;">view all team members</button></p>
-      </div>
-    `;
-    return;
-  }
-  
-  filteredMembers.forEach(member => {
-    const teamCard = createTeamCard(member);
-    teamGrid.appendChild(teamCard);
-  });
-}
-
-// Clear search function
-function clearSearch() {
-  const searchInput = document.querySelector('.search-input');
-  if (searchInput) {
-    searchInput.value = '';
-  }
-  renderTeamMembers();
-}
-
-// Handle image loading errors
-function handleImageError(img) {
-  // Create a professional placeholder SVG for police officers
-  const placeholderSVG = `data:image/svg+xml;base64,${btoa(`
-    <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="150" height="150" fill="#21808D"/>
-      <circle cx="75" cy="55" r="20" fill="white" opacity="0.8"/>
-      <path d="M45 95c0-16.5 13.5-30 30-30s30 13.5 30 30v20H45V95z" fill="white" opacity="0.8"/>
-      <rect x="65" y="25" width="20" height="8" rx="4" fill="white" opacity="0.6"/>
-      <text x="75" y="130" text-anchor="middle" fill="white" font-size="10" font-family="Arial">OFFICER</text>
-    </svg>
-  `)}`;
-  
-  img.src = placeholderSVG;
-  img.alt = 'Police Officer Profile';
-}
-
-// Initialize scroll to top functionality
-function initializeScrollToTop() {
-  // Create scroll to top button
-  const scrollToTopBtn = document.createElement('button');
-  scrollToTopBtn.className = 'scroll-to-top';
-  scrollToTopBtn.innerHTML = '↑';
-  scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
-  document.body.appendChild(scrollToTopBtn);
-  
-  // Show/hide scroll to top button based on scroll position
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-      scrollToTopBtn.classList.add('visible');
-    } else {
-      scrollToTopBtn.classList.remove('visible');
     }
   });
-  
-  // Scroll to top when clicked
-  scrollToTopBtn.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
 }
 
-// Intersection Observer for scroll animations
+// Apply focus trap when modal opens
+const originalOpenTeamModal = openTeamModal;
+openTeamModal = function(memberName) {
+  originalOpenTeamModal(memberName);
+  setTimeout(() => {
+    trapFocus(teamModal);
+    modalClose.focus();
+  }, 100);
+};
+
+// Intersection Observer for animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
@@ -441,131 +431,36 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Apply scroll animations to team cards
-function applyScrollAnimations() {
-  setTimeout(() => {
-    document.querySelectorAll('.team-card').forEach((card, index) => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
-      card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-      observer.observe(card);
-    });
-  }, 100);
-}
-
-// Active navigation highlighting
-function updateActiveNavigation() {
-  const sections = ['home', 'about', 'services', 'team', 'resources', 'contact', 'emergency'];
-  const navLinks = document.querySelectorAll('.nav-link');
-  
-  let currentSection = 'home';
-  
-  sections.forEach(sectionId => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 100 && rect.bottom >= 100) {
-        currentSection = sectionId;
-      }
-    }
-  });
-  
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${currentSection}`) {
-      link.classList.add('active');
-    }
-  });
-}
-
-// Performance optimization: debounce scroll events
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
-
-// Apply debounced scroll handler
-window.addEventListener('scroll', debounce(updateActiveNavigation, 10));
-
-// Initialize scroll animations after DOM is loaded
+// Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() {
-  applyScrollAnimations();
+  setTimeout(() => {
+    const animatedElements = document.querySelectorAll('.team__member, .about__card, .emergency__card');
+    animatedElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+      observer.observe(el);
+    });
+  }, 500);
 });
 
-// Re-apply animations when team members are re-rendered
-const originalRenderTeamMembers = renderTeamMembers;
-renderTeamMembers = function() {
-  originalRenderTeamMembers();
-  applyScrollAnimations();
-};
-
-// Accessibility improvements
-document.addEventListener('keydown', function(e) {
-  // Allow Enter key to trigger clicks on focusable elements
-  if (e.key === 'Enter') {
-    const activeElement = document.activeElement;
-    if (activeElement && activeElement.classList.contains('team-card')) {
-      activeElement.click();
-    }
-  }
-});
-
-// Error handling for missing elements
-function safeElementAction(selector, action) {
-  const element = document.querySelector(selector);
-  if (element && typeof action === 'function') {
-    action(element);
-  }
-}
-
-// Improved image loading with retry mechanism
-function loadImageWithRetry(img, retryCount = 3) {
-  return new Promise((resolve, reject) => {
-    let attempts = 0;
-    
-    function attemptLoad() {
-      attempts++;
-      
-      const tempImg = new Image();
-      tempImg.onload = () => {
-        img.src = tempImg.src;
-        resolve();
-      };
-      
-      tempImg.onerror = () => {
-        if (attempts < retryCount) {
-          setTimeout(attemptLoad, 1000 * attempts); // Exponential backoff
-        } else {
-          handleImageError(img);
-          resolve(); // Resolve even on failure to prevent hanging
-        }
-      };
-      
-      tempImg.src = img.getAttribute('data-src') || img.src;
-    }
-    
-    attemptLoad();
+// Performance optimization - lazy loading for images
+if ('loading' in HTMLImageElement.prototype) {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+  images.forEach(img => {
+    img.src = img.dataset.src || img.src;
   });
+} else {
+  // Fallback for browsers that don't support lazy loading
+  const script = document.createElement('script');
+  script.src = 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver';
+  document.head.appendChild(script);
 }
 
-// Enhanced error handling
-window.addEventListener('error', function(e) {
-  console.error('Application error:', e.error);
-  // Graceful degradation - ensure basic functionality still works
-});
-
-// Ensure proper cleanup on page unload
-window.addEventListener('beforeunload', function() {
-  // Clean up any ongoing operations
-  document.body.style.overflow = 'auto';
-  if (modal) {
-    modal.style.display = 'none';
+// Error handling for images
+document.addEventListener('error', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik03NSA0MEMyOC4zIDQwIDQwIDI4LjMgNDAgNzVTMjguMyAxMTAgNzUgMTEwUzExMCAxMjEuNyAxMTAgNzVTMTIxLjcgNDAgNzUgNDBaTTc1IDk1QzQxLjkgOTUgNTUgODEuMSA1NSA3NVM2OC45IDU1IDc1IDU1Uzk1IDY4LjkgOTUgNzVTODEuMSA5NSA3NSA5NVoiIGZpbGw9IiM5Q0E4QjAiLz4KPC9zdmc+';
+    e.target.alt = 'Profile image not available';
   }
-});
+}, true);
